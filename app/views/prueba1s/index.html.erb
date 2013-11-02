@@ -1,0 +1,21 @@
+<h1>Listing prueba1s</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @prueba1s.each do |prueba1| %>
+  <tr>
+    <td><%= link_to 'Show', prueba1 %></td>
+    <td><%= link_to 'Edit', edit_prueba1_path(prueba1) %></td>
+    <td><%= link_to 'Destroy', prueba1, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Prueba1', new_prueba1_path %>
